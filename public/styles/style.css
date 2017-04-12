@@ -136,6 +136,12 @@ html {
   font-size: 62.5%; }
 
 body {
+  font-family: 'Open Sans', sans-serif; }
+
+span, #subtitle {
+  font-family: 'Lora', serif; }
+
+body {
   background: cadetblue; }
 
 .wrapper {
