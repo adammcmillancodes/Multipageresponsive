@@ -14,11 +14,22 @@ body {
 header {
 	background: red;
 }
-
+.hero {
+	background-image: url("../../assets/hero.jpeg");
+	height: 85vh;
+	background-position: center 80%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 nav {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	align-items: center;
+	p {
+		font-size: 2.4rem;
+		
+	}
 	ul {
 		list-style: none;
 		display: flex;
@@ -30,4 +41,7 @@ nav {
 			color: black;
 		}
 	}
+}
+.headerContent {
+	width: 50%;
 }

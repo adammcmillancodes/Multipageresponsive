@@ -132,6 +132,9 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+html {
+  font-size: 62.5%; }
+
 body {
   background: cadetblue; }
 
@@ -143,10 +146,20 @@ body {
 header {
   background: red; }
 
+.hero {
+  background-image: url("../../assets/hero.jpeg");
+  height: 85vh;
+  background-position: center 80%;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
 nav {
   display: flex;
   flex-direction: row;
-  justify-content: space-between; }
+  justify-content: space-between;
+  align-items: center; }
+  nav p {
+    font-size: 2.4rem; }
   nav ul {
     list-style: none;
     display: flex;
@@ -156,3 +169,6 @@ nav {
     nav ul a {
       text-decoration: none;
       color: black; }
+
+.headerContent {
+  width: 50%; }
