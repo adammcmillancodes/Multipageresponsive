@@ -5,16 +5,17 @@
 	<title>Create</title>
 	<link rel="stylesheet" type="text/css" href="./public/styles/style.css">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Lora:400i,700i|Open+Sans:300" rel="stylesheet">
 </head>
 <body>
-	<header>
+	<header class="wrapper">
 		<nav>
 			<p>Create.</p>
 			<ul>
 				<li><a href="#about">about us</a></li>
-				<li><a href="#">portfolio</a></li>
-				<li><a href="#">blog</a></li>
-				<li><a href="#">contact</a></li>
+				<li><a href="portfolio.html">portfolio</a></li>
+				<li><a href="blog.html">blog</a></li>
+				<li><a href="#contact">contact</a></li>
 			</ul>
 		</nav>
 		<div class="headerContent">
@@ -24,8 +25,8 @@
 			<button>Create My Style</button>
 		</div>
 	</header>
-	<section>
-		<div class="about" id="about">
+	<section class="about" id="about">
+		<div class="wrapper">
 			<div>
 				<p>Hello!</p>
 				<p>We are the branding agency.</p>
@@ -54,8 +55,8 @@
 			</div>
 		</div>
 	</section>
-	<section>
-		<div class="team">
+	<section class="team" id="team">
+		<div class="wrapper">
 			<h2>Meet our <span>team</span>!</h2>
 			<div class="profile">
 				<p>Our team is really <span>crazy</span></p>
@@ -74,8 +75,8 @@
 			</div>
 		</div>
 	</section>
-	<section>
-		<div class="features">
+	<section class="features">
+		<div class="wrapper">
 			<div class="featuresMain">
 				<h2><span>Features</span> of our work</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet libero suscipit ab reiciendis similique doloribus nostrum fugiat quis soluta laudantium unde, magni deleniti iusto possimus vitae ipsum quae commodi explicabo!</p>
@@ -110,8 +111,8 @@
 			</div>
 		</div>
 	</section>
-	<section>
-		<div class="pricing">
+	<section class="pricing">
+		<div class="wrapper">
 			<div class="pricingDescription">
 				<h2>Our <span>prices</span></h2>
 				<p>Choose your pricing plan lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore illo, nam voluptas ipsum. At tenetur autem aut rem, qui, debitis.</p>
@@ -140,80 +141,90 @@
 			</div>
 		</div>
 	</section>
-	<section>
-		<div class="blog">
-			<h2>Latest from <span>the blog</span></h2>
-		</div>
-		<div class="blogpost">
-			<div class="blogPreview blogPreview1"></div>
-			<div class="blogInfo">
-				<div class="blogStats">
-					<p>May 6 2016</p>
-					<ul>
-						<li>0</li>
-						<li>6</li>
-					</ul>
-				</div>
-				<div class="blogContent">
-					<h3>New blog post</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis.</p>
+	<section class="blog">
+		<div class="wrapper">
+			<div class="blogIntro">
+				<h2>Latest from <span>the blog</span></h2>
+			</div>
+			<div class="blogPost">
+				<div class="blogPreview blogPreview1"></div>
+				<div class="blogInfo">
+					<div class="blogStats">
+						<p>May 6 2016</p>
+						<ul>
+							<li>0</li>
+							<li>6</li>
+						</ul>
+					</div>
+					<div class="blogContent">
+						<h3>New blog post</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis.</p>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="blogpost">
-			<div class="blogPreview blogPreview2"></div>
-			<div class="blogInfo">
-				<div class="blogStats">
-					<p>May 6 2016</p>
-					<ul>
-						<li>0</li>
-						<li>6</li>
-					</ul>
-				</div>
-				<div class="blogContent">
-					<h3>New blog post</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod!</p>
+			<div class="blogPost">
+				<div class="blogPreview blogPreview2"></div>
+				<div class="blogInfo">
+					<div class="blogStats">
+						<p>May 6 2016</p>
+						<ul>
+							<li>0</li>
+							<li>6</li>
+						</ul>
+					</div>
+					<div class="blogContent">
+						<h3>New blog post</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod!</p>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="blogpost">
-			<div class="blogPreview blogPreview3"></div>
-			<div class="blogInfo">
-				<div class="blogStats">
-					<p>May 6 2016</p>
-					<ul>
-						<li>0</li>
-						<li>6</li>
-					</ul>
-				</div>
-				<div class="blogContent">
-					<h3>New blog post</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste.</p>
+			<div class="blogPost">
+				<div class="blogPreview blogPreview3"></div>
+				<div class="blogInfo">
+					<div class="blogStats">
+						<p>May 6 2016</p>
+						<ul>
+							<li>0</li>
+							<li>6</li>
+						</ul>
+					</div>
+					<div class="blogContent">
+						<h3>New blog post</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste.</p>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<footer>
-		<div class="contact">
-			<h4>Contact Us</h4>
-			<p>Saint-Petersburg,<span>26 Serpukhovskaya St.</span></p>
-			<p>+(22)34567 5579</p>
-			<p><a href="mailto:create@thestudio.com">create@studio.com</a></p>
-		</div>
-		<div class="newsletter">
-			<h4>Subscribe for awesome news</h4>
-			<p>No Spam. Only fresh ideas about our life and useful articles about the latest design trends.</p>
-			<div class="newsletterInput">
-				<input type="email">
-				<button>Subscribe</button>
+	<footer id="contact">
+		<div class="wrapper">
+			<div class="contact">
+				<h4>Contact Us</h4>
+				<p>Saint-Petersburg,<span>26 Serpukhovskaya St.</span></p>
+				<p>+(22)34567 5579</p>
+				<p><a href="mailto:create@thestudio.com">create@studio.com</a></p>
+			</div>
+			<div class="newsletter">
+				<h4>Subscribe for awesome news</h4>
+				<p>No Spam. Only fresh ideas about our life and useful articles about the latest design trends.</p>
+				<div class="newsletterInput">
+					<input type="email">
+					<button>Subscribe</button>
+				</div>
+			</div>
+			<div class="social">
+				<h4>Join Us</h4>
+				<p>We are happy to see you in our communites! Please join us!</p>
+				<ul>
+					<li><a href="https://www.facebook.com/"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+					<li><a href="https://www.tumblr.com/"><i class="fa fa-tumblr-square" aria-hidden="true"></i></a></li>
+					<li><a href="https://www.twitter.com/"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+					<li><a href="https://www.youtube.com/"><i class="fa fa-youtube-square" aria-hidden="true"></i></a></li>
+					<li><a href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+				</ul>
 			</div>
 		</div>
-		
 	</footer>
-
-
-
-
 
 	<script src="./public/scripts/app.js"></script>
 </body>
