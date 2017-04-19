@@ -1,46 +1,121 @@
 @import "partials/setup";
+@import "partials/header";
 
-
-body {
-	background: cadetblue;
-}
-
-.wrapper {
-	width: 60%;
-	max-width: 1170px;
-	margin: 0 auto;
-}
-
-header {
-	background: red;
-}
-.hero {
-	background-image: url("../../assets/hero.jpeg");
-	height: 85vh;
-	background-position: center 80%;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-nav {
+.aboutContent {
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-	p {
-		font-size: 2.4rem;
+	.aboutBio {
+		width: 48%;
+		color: white;
+		background-color: salmon;
+		padding: 50px;
+		h3 {
+			display: flex;
+			flex-direction: column;
+			font-size: 3.2rem;
+			font-weight: 100;
+			span {
+				color: white;
+			}
+		}
+	}
+	.aboutServices {
+		width: 52%;
+		padding-left: 30px;
+	}
+	h2 {
+		margin: 0;
+		width: 95%;
+		margin-bottom: 30px;
+		span {
+		margin-left: 30%;
+		}
 	}
 	ul {
-		list-style: none;
 		display: flex;
 		flex-direction: row;
-		width: 35%;
-		justify-content: space-between;
-		a {
-			text-decoration: none;
-			color: black;
+		flex-wrap: wrap;
+		padding-left: 0;
+		margin-left: 20px;
+		width: 100%;
+		li {
+			width: calc(50% - 10px);
+			list-style: none;
+			list-style-position: inside;
+			position: relative;
+			margin: 5px;
+			h4 {
+				margin: 0;
+			}
+		}
+		li h4:before {
+			content: '\f0da';
+			font-family: FontAwesome;
+			position: absolute;
+			top: 0;
+			left: -20px;
+			color: green;
+
 		}
 	}
 }
-.headerContent {
-	width: 50%;
+
+.profile {
+	background-color: salmon;
+	color: white;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 80px 20px;
+	h3 {
+		width: 20%;
+		padding-left: 20px;
+		margin: 0;
+		span {
+			color: white;
+		}
+	}
+}
+
+.profileImage {
+	background: url("../../assets/person.jpeg");
+	width: 42%;
+	background-position: 72.5%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: scaleY(1.6);
+    box-shadow: 3px 3px 20px 1px rgba(0, 0, 0, 0.35);
+}
+
+.profileContent {
+	width: 34%;
+	h4 {
+		margin: 0;
+	}
+	h5 {
+		margin-top: 10px;
+	}
+}
+
+.profileLinks {
+	list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    width: 30%;
+    font-size: 1.6rem;
+    margin: 0;
+    li a{
+    	color: white;
+    }
+}
+
+.team h2 {
+	margin-bottom: 90px;
+	font-weight: 100;
+}
+.ourTeam {
+	display: block;
+	color: grey;
+	margin-left: 50px;
 }

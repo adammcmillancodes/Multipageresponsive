@@ -136,21 +136,56 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-family: 'Open Sans', sans-serif; }
+  font-family: 'Open Sans', sans-serif;
+  color: grey; }
 
-span, #subtitle {
+header, section {
+  margin-bottom: 150px; }
+
+span {
+  color: salmon; }
+
+h1 {
+  font-size: 6.0rem;
+  margin-top: 95px;
+  margin-bottom: 0;
+  color: grey;
+  font-weight: 400; }
+
+h2 {
+  font-size: 3.6rem;
+  line-height: 1.2em; }
+
+h3 {
+  font-size: 2.6rem;
+  line-height: 1.6em; }
+
+h4 {
+  font-size: 3.0rem; }
+
+h5 {
+  font-size: 1.6rem; }
+
+p {
+  font-size: 2.0rem;
+  line-height: 1.5em; }
+
+footer p {
+  font-size: 1.3rem; }
+
+h1, h2, h3, h4, h5, h6, .subtitle, .aboutBio {
   font-family: 'Lora', serif; }
 
-body {
-  background: cadetblue; }
+span, .subtitle {
+  font-style: italic; }
+
+.subtitle {
+  font-size: 1.6rem; }
 
 .wrapper {
   width: 60%;
   max-width: 1170px;
   margin: 0 auto; }
-
-header {
-  background: red; }
 
 .hero {
   background-image: url("../../assets/hero.jpeg");
@@ -163,18 +198,136 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  padding-top: 30px; }
   nav p {
-    font-size: 2.4rem; }
+    font-size: 1.8rem;
+    margin: 0; }
   nav ul {
     list-style: none;
     display: flex;
-    flex-direction: row;
-    width: 35%;
-    justify-content: space-between; }
+    flex-direction: row; }
     nav ul a {
       text-decoration: none;
-      color: black; }
+      color: black;
+      font-size: 1.5rem;
+      margin-left: 20px;
+      font-weight: 200; }
 
 .headerContent {
-  width: 50%; }
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
+  .headerContent .subtitle {
+    font-size: 2.4rem;
+    margin: 0;
+    font-weight: 100; }
+  .headerContent p {
+    font-size: 1.7rem;
+    width: 70%; }
+  .headerContent button {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    background: transparent;
+    border: 1px solid rgba(63, 154, 75, 0.64);
+    padding: 12px 20px;
+    width: 37.5%;
+    margin-top: 30px; }
+
+.aboutContent {
+  display: flex; }
+  .aboutContent .aboutBio {
+    width: 48%;
+    color: white;
+    background-color: salmon;
+    padding: 50px; }
+    .aboutContent .aboutBio h3 {
+      display: flex;
+      flex-direction: column;
+      font-size: 3.2rem;
+      font-weight: 100; }
+      .aboutContent .aboutBio h3 span {
+        color: white; }
+  .aboutContent .aboutServices {
+    width: 52%;
+    padding-left: 30px; }
+  .aboutContent h2 {
+    margin: 0;
+    width: 95%;
+    margin-bottom: 30px; }
+    .aboutContent h2 span {
+      margin-left: 30%; }
+  .aboutContent ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-left: 20px;
+    width: 100%; }
+    .aboutContent ul li {
+      width: calc(50% - 10px);
+      list-style: none;
+      list-style-position: inside;
+      position: relative;
+      margin: 5px; }
+      .aboutContent ul li h4 {
+        margin: 0; }
+    .aboutContent ul li h4:before {
+      content: '\f0da';
+      font-family: FontAwesome;
+      position: absolute;
+      top: 0;
+      left: -20px;
+      color: green; }
+
+.profile {
+  background-color: salmon;
+  color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 80px 20px; }
+  .profile h3 {
+    width: 20%;
+    padding-left: 20px;
+    margin: 0; }
+    .profile h3 span {
+      color: white; }
+
+.profileImage {
+  background: url("../../assets/person.jpeg");
+  width: 42%;
+  background-position: 72.5%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transform: scaleY(1.6);
+  box-shadow: 3px 3px 20px 1px rgba(0, 0, 0, 0.35); }
+
+.profileContent {
+  width: 34%; }
+  .profileContent h4 {
+    margin: 0; }
+  .profileContent h5 {
+    margin-top: 10px; }
+
+.profileLinks {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  width: 30%;
+  font-size: 1.6rem;
+  margin: 0; }
+  .profileLinks li a {
+    color: white; }
+
+.team h2 {
+  margin-bottom: 90px;
+  font-weight: 100; }
+
+.ourTeam {
+  display: block;
+  color: grey;
+  margin-left: 50px; }
