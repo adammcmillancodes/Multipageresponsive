@@ -143,7 +143,7 @@ header, section {
   margin-bottom: 150px; }
 
 span {
-  color: salmon; }
+  color: #ff9884; }
 
 h1 {
   font-size: 6.0rem;
@@ -161,13 +161,13 @@ h3 {
   line-height: 1.6em; }
 
 h4 {
-  font-size: 3.0rem; }
+  font-size: 2.3rem; }
 
 h5 {
   font-size: 1.6rem; }
 
 p {
-  font-size: 2.0rem;
+  font-size: 1.8rem;
   line-height: 1.5em; }
 
 footer p {
@@ -240,7 +240,7 @@ nav {
   .aboutContent .aboutBio {
     width: 48%;
     color: white;
-    background-color: salmon;
+    background-color: #ff9884;
     padding: 50px; }
     .aboutContent .aboutBio h3 {
       display: flex;
@@ -279,10 +279,10 @@ nav {
       position: absolute;
       top: 0;
       left: -20px;
-      color: green; }
+      color: rgba(0, 128, 0, 0.5); }
 
 .profile {
-  background-color: salmon;
+  background-color: #ff9884;
   color: white;
   width: 100%;
   display: flex;
@@ -290,7 +290,7 @@ nav {
   justify-content: space-between;
   padding: 80px 20px; }
   .profile h3 {
-    width: 20%;
+    width: 18%;
     padding-left: 20px;
     margin: 0; }
     .profile h3 span {
@@ -327,7 +327,106 @@ nav {
   margin-bottom: 90px;
   font-weight: 100; }
 
-.ourTeam {
+.lineBreak {
   display: block;
   color: grey;
   margin-left: 50px; }
+
+#features {
+  background: #ff9884; }
+
+.features {
+  display: flex;
+  width: 100%; }
+
+.featuresMain {
+  width: 50%;
+  color: white;
+  padding-left: 20%;
+  margin: 80px 0 200px 0; }
+  .featuresMain span {
+    color: white; }
+  .featuresMain span:last-of-type {
+    font-family: 'Lora', serif;
+    font-style: normal;
+    margin-left: 90px; }
+
+.featuresMain__content {
+  width: 75%; }
+  .featuresMain__content h2 {
+    margin-top: 0; }
+  .featuresMain__content p {
+    padding-right: 75px; }
+
+.featuresList {
+  width: 50%;
+  background-image: url("../../assets/leaves.jpeg");
+  padding-right: 20%;
+  position: relative;
+  background-size: cover;
+  background-position: 85% 75%; }
+  .featuresList ul {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    position: absolute;
+    width: 80%;
+    padding: 40px 50px;
+    list-style: none;
+    top: 80px;
+    left: -15%; }
+    .featuresList ul li {
+      width: 50%;
+      padding: 10px;
+      padding-left: 20px; }
+      .featuresList ul li h3 {
+        font-size: 2.2rem;
+        margin: 0; }
+      .featuresList ul li p {
+        width: 85%;
+        margin-top: 10px; }
+
+.listTitle {
+  position: relative; }
+
+.listTitle:before {
+  font-family: FontAwesome;
+  position: absolute;
+  top: 0;
+  left: -35px;
+  color: rgba(0, 128, 0, 0.5);
+  font-size: inherit; }
+
+.listTitle1:before {
+  content: '\f091'; }
+
+.listTitle2:before {
+  content: '\f0eb'; }
+
+.listTitle3:before {
+  content: '\f135'; }
+
+.listTitle4:before {
+  content: '\f164'; }
+
+.pricing {
+  display: flex; }
+
+.pricingDescription {
+  width: 33%; }
+  .pricingDescription p {
+    width: 80%; }
+  .pricingDescription h2 {
+    width: 100%; }
+    .pricingDescription h2 span {
+      margin-left: 75px; }
+
+.plan {
+  width: 30%;
+  text-align: center;
+  padding: 15px; }
+  .plan h4 {
+    background: #ff9884;
+    padding: 25px;
+    color: white; }
