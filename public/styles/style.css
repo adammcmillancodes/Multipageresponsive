@@ -418,15 +418,40 @@ nav {
   .pricingDescription p {
     width: 80%; }
   .pricingDescription h2 {
-    width: 100%; }
+    width: 100%;
+    margin: 0; }
     .pricingDescription h2 span {
       margin-left: 75px; }
 
 .plan {
-  width: 30%;
+  width: 33%;
   text-align: center;
-  padding: 15px; }
+  box-shadow: 2px 6px 12px rgba(0, 0, 0, 0.13);
+  margin: 12px; }
   .plan h4 {
     background: #ff9884;
     padding: 25px;
-    color: white; }
+    color: white;
+    margin: 0; }
+
+.planContent {
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.planContent ul {
+  list-style: none;
+  padding: 0; }
+  .planContent ul li p {
+    margin: 30px; }
+    .planContent ul li p span {
+      color: black;
+      margin: 0 3px; }
+
+.plan button {
+  padding: 20px 40px;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  background: transparent;
+  border: 2px solid rgba(0, 128, 0, 0.5); }
