@@ -142,7 +142,7 @@ body {
 header, section {
   margin-bottom: 150px; }
 
-span {
+span, footer h5 {
   color: #ff9884; }
 
 h1 {
@@ -171,7 +171,8 @@ p {
   line-height: 1.5em; }
 
 footer p {
-  font-size: 1.3rem; }
+  font-size: 1.3rem;
+  color: white; }
 
 h1, h2, h3, h4, h5, h6, .subtitle, .aboutBio {
   font-family: 'Lora', serif; }
@@ -553,3 +554,68 @@ nav {
 .blogContent p {
   margin: 10px 0;
   font-size: 1.2rem; }
+
+footer {
+  background-color: rgba(0, 0, 0, 0.91); }
+
+footer a:hover {
+  color: #ff9884; }
+
+.footerContent {
+  display: flex; }
+
+.footerSection {
+  padding: 25px; }
+  .footerSection a {
+    color: white;
+    text-decoration: none; }
+
+.contact {
+  width: 25%; }
+
+.newsletter {
+  width: 45%; }
+
+.newsletterInput {
+  display: flex; }
+  .newsletterInput input {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    width: 250px;
+    color: white; }
+  .newsletterInput input::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.3rem; }
+  .newsletterInput input::-moz-input-placeholder {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.3rem; }
+  .newsletterInput input::-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.3rem; }
+  .newsletterInput input::-moz-input-placeholder {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.3rem; }
+  .newsletterInput button {
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: uppercase;
+    border: 2px solid white;
+    background: transparent;
+    width: 120px;
+    padding: 10px;
+    margin: 0 10px; }
+  .newsletterInput button:hover {
+    border: 2px solid transparent;
+    background: #ff9884; }
+
+.social {
+  width: 30%; }
+  .social ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    width: 65%;
+    font-size: 2.0rem; }

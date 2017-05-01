@@ -1,0 +1,395 @@
+// BEGIN ABOUT SECTION!!//
+.aboutContent {
+	display: flex;
+	.aboutBio {
+		width: 48%;
+		color: white;
+		background-color: rgb(255, 152, 132);
+		padding: 50px;
+		h3 {
+			display: flex;
+			flex-direction: column;
+			font-size: 3.2rem;
+			font-weight: 100;
+			span {
+				color: white;
+			}
+		}
+	}
+	.aboutServices {
+		width: 52%;
+		padding-left: 30px;
+	}
+	h2 {
+		margin: 0;
+		width: 80%;
+		margin-bottom: 30px;
+		span {
+		margin-left: 30%;
+		}
+	}
+	ul {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		padding-left: 0;
+		margin-left: 20px;
+		width: 100%;
+		li {
+			width: calc(50% - 10px);
+			list-style: none;
+			list-style-position: inside;
+			position: relative;
+			margin: 5px;
+			h4 {
+				margin: 0;
+			}
+		}
+		li h4:before {
+			content: '\f0da';
+			font-family: FontAwesome;
+			position: absolute;
+			top: 0;
+			left: -20px;
+			color: rgba(0, 128, 0, 0.5);
+
+		}
+	}
+}
+//END OF ABOUT SECTION!!//
+// BEGINNING OF TEAM SECTION!! //
+.profile {
+	background-color: rgb(255, 152, 132);
+	color: white;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 80px 20px;
+	h3 {
+		width: 18%;
+		padding-left: 20px;
+		margin: 0;
+		span {
+			color: white;
+		}
+	}
+}
+
+.profileImage {
+	background: url("../../assets/person.jpeg");
+	width: 42%;
+	background-position: 72.5%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: scaleY(1.8);
+    box-shadow: 3px 3px 20px 1px rgba(0, 0, 0, 0.35);
+}
+
+.profileContent {
+	width: 34%;
+	h4 {
+		margin: 0;
+	}
+	h5 {
+		margin-top: 10px;
+	}
+}
+
+.profileLinks {
+	list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    width: 30%;
+    font-size: 1.6rem;
+    margin: 0;
+    li a{
+    	color: white;
+    }
+}
+
+.team h2 {
+	margin-bottom: 90px;
+	font-weight: 100;
+}
+.lineBreak {
+	display: block;
+	color: grey;
+	margin-left: 50px;
+}
+
+// END OF TEAM SECTION //
+// BEGIN FEATURES SECTION!!//
+
+#features {
+	background: rgb(255, 152, 132);
+}
+
+.features {
+	display: flex;
+	width: 100%;
+}
+
+.featuresMain{
+	width: 50%;
+	color: white;
+	padding-left: 20%;
+	margin: 80px 0 200px 0;
+	span {
+		color: white;
+	}
+	span:last-of-type {
+		font-family: 'Lora', serif;
+		font-style: normal;
+		margin-left: 90px;
+	}
+}
+.featuresMain__content {
+	width: 75%;
+	h2 {
+		margin-top: 0;
+	}
+	p {
+		padding-right: 75px;
+	}
+}
+
+.featuresList {
+	width: 50%;
+	background-image: url("../../assets/leaves.jpeg");
+	padding-right: 20%;
+	position: relative;
+	background-size: cover;
+    background-position: 85% 75%;
+	ul {
+		background-color: white;
+    	display: flex;
+    	flex-wrap: wrap;
+    	flex-direction: row;
+    	position: absolute;
+    	width: 80%;
+    	padding: 40px 50px;
+    	list-style: none;
+    	top: 80px;
+    	left: -15%;
+		li {
+			width: 50%;
+			padding: 10px;
+			padding-left: 20px;
+			h3 {
+				font-size: 2.2rem;
+				margin: 0;
+			}
+			p {
+				width: 85%;
+				margin-top: 10px;
+			}
+		}
+	}
+}
+.listTitle {
+	position: relative;
+}
+.listTitle:before{
+	font-family: FontAwesome;
+    position: absolute;
+    top: 0;
+    left: -35px;
+    color: rgba(0, 128, 0, 0.5);
+    font-size: inherit;
+
+}
+.listTitle1:before {
+	content: '\f091';
+}
+.listTitle2:before {
+	content: '\f0eb';
+}
+.listTitle3:before {
+	content: '\f135';
+}
+.listTitle4:before {
+	content: '\f164';
+}
+// END OF FEATURES SECTION!! //
+
+// BEGINNING OF PRICES SECTION //
+
+.pricing {
+	display: flex;
+}
+
+.pricingDescription {
+	width: 29%;
+	p {
+		width: 80%;
+	}
+	h2 {
+		width: 100%;
+		margin: 0;
+		span {
+			margin-left: 50px;
+		}
+	}
+}
+
+.plan {
+	width: 35.5%;
+    text-align: center;
+    box-shadow: 2px 6px 20px rgba(0, 0, 0, 0.13);
+    margin: 12px;
+	h4 {
+    background: rgb(255, 152, 132);
+    padding: 25px;
+    color: white;
+    margin: 0;
+	}
+}
+.planWrap {
+	position: relative;
+}
+.planContent {
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.planContent ul {
+	list-style: none;
+	padding: 0;
+	li p{
+		margin: 30px;
+		position: relative;
+		span{
+		color: rgba(0, 0, 0, 0.74);
+		margin: 0 3px;
+		font-style: normal;
+		font-weight: 600;
+		font-family: lora;
+		}
+	}
+}
+
+.planContent li p:after {
+	position: absolute;
+	content: '\f0d7';
+	font-family: FontAwesome;
+	bottom: -100%;
+	left: 50%;
+	font-size: inherit;
+	color: rgba(128, 128, 128, 0.5);
+}
+
+.price {
+	font-size: 3.4rem;
+	font-weight: 900; 
+	margin: 0;
+	margin-bottom: 25px;
+	color: rgba(0, 0, 0, 0.65);
+}
+
+.plan button {
+	padding: 15px 25px;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    background: transparent;
+    border: 1px solid rgba(0, 128, 0, 0.5);
+	margin-bottom: 40px;
+}
+
+.plan button:hover {
+	color: white;
+	background: rgba(0, 128, 0, 0.5);
+	font-weight: 300;
+}
+
+// END OF PRICING SECTION!! //
+
+// BEGINNING OF BLOG SECTION!! //
+
+.blog {
+	display: flex;
+	flex-direction: column;
+}
+.blogIntro {
+	width: 40%;
+	span {
+		margin-left: 35%;
+	}
+}
+.blogWrap {
+	display: flex;
+}
+
+.blogPost {
+	width: 33.3%;
+	margin: 10px;
+	box-shadow: 2px 6px 20px rgba(0, 0, 0, 0.13);
+}
+
+.blogPreview {
+	width: 100%;
+	height: 380px;
+	background-position: center;
+	background-size: cover;
+}
+
+.blogPreview1 {
+	background-image: url("../../assets/blog_03.jpeg");
+}
+
+.blogPreview2 {
+	background-image: url("../../assets/blog_02.jpeg");
+}
+
+.blogPreview3 {
+	background-image: url("../../assets/blog_01.jpeg");
+}
+.blogInfo {
+	padding: 10px 15px 20px 15px;
+}
+.blogStats {
+	display: flex;
+	justify-content: space-between;
+	p {
+		margin: 0;
+		font-size: 1.0rem;
+	}
+	ul {
+		list-style: none;
+		display: flex;
+		margin: 0;
+		li {
+			margin: 0 10px;
+			position: relative;
+		}
+		li:before {
+			font-family: FontAwesome;
+			position: absolute;
+			top: 2px;
+			left: -15px;
+		}
+		li:first-child:before {
+			content: '\f0e5';
+		}
+		li:last-child:before {
+			content: '\f06e';
+		}
+	}
+}
+
+.blogContent {
+	h4 {
+		margin: 10px 0;
+	}
+	h4:hover {
+		color: #ff9884;
+		text-decoration: underline;
+	}
+	p {
+		margin: 10px 0;
+		font-size: 1.2rem;
+	}
+}
+// END OF BLOG SECTION!! //

@@ -1,0 +1,76 @@
+footer {
+	background-color: rgba(0, 0, 0, 0.91);
+}
+footer a:hover {
+	color: rgb(255, 152, 132);
+}
+
+.footerContent {
+	display: flex;
+}
+
+.footerSection {
+	padding: 25px;
+	a {
+		color: white;
+		text-decoration: none;
+	}
+}
+.contact {
+	width: 25%;
+}
+.newsletter {
+	width: 45%;
+}
+.newsletterInput {
+	display: flex;
+	input {
+		background: transparent;
+	    border: none;
+	    border-bottom: 2px solid white;
+	    width: 250px;
+	    color: white;
+	}
+	input::-webkit-input-placeholder {
+  		color: rgba(255, 255, 255, 0.5);
+  		font-size: 1.3rem;
+	}
+	input::-moz-input-placeholder { 
+		color: rgba(255, 255, 255, 0.5);
+		font-size: 1.3rem;
+	}
+	input::-ms-input-placeholder {
+		color: rgba(255, 255, 255, 0.5);
+		font-size: 1.3rem;
+	}
+	input::-moz-input-placeholder {
+		color: rgba(255, 255, 255, 0.5);
+		font-size: 1.3rem;
+	}
+	button {
+		color: white;
+		font-size: 1.2rem;
+		text-decoration: uppercase;
+		border: 2px solid white;
+		background: transparent;
+		width: 120px;
+		padding: 10px;
+		margin: 0 10px;
+	}
+	button:hover {
+		border: 2px solid transparent;
+		background: rgb(255, 152, 132);
+	}
+}
+.social {
+	width: 30%;
+	ul {
+    list-style: none;
+	display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    width: 65%;
+    font-size: 2.0rem;
+	}
+}
