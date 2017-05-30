@@ -500,13 +500,20 @@ nav {
   .blogIntro span {
     margin-left: 35%; }
 
-.blogWrap {
-  display: flex; }
+.postWrap {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%; }
 
 .blogPost {
-  width: 33.3%;
-  margin: 10px;
-  box-shadow: 2px 6px 20px rgba(0, 0, 0, 0.13); }
+  width: calc(33.3% - 10px);
+  margin: 5px;
+  box-shadow: 2px 6px 20px rgba(0, 0, 0, 0.13);
+  transition: all 1s; }
+
+.blogPost:hover {
+  transform: scale(1.1);
+  z-index: 99; }
 
 .blogPreview {
   width: 100%;
@@ -523,8 +530,27 @@ nav {
 .blogPreview3 {
   background-image: url("../../assets/blog_01.jpeg"); }
 
+.blogPreview4 {
+  background-image: url("../../assets/blog_09.jpeg"); }
+
+.blogPreview5 {
+  background-image: url("../../assets/blog_10.jpeg"); }
+
+.blogPreview6 {
+  background-image: url("../../assets/blog_05.jpeg"); }
+
+.blogPreview7 {
+  background-image: url("../../assets/blog_06.jpeg"); }
+
+.blogPreview8 {
+  background-image: url("../../assets/blog_07.jpeg"); }
+
+.blogPreview9 {
+  background-image: url("../../assets/blog_08.jpeg"); }
+
 .blogInfo {
-  padding: 10px 15px 20px 15px; }
+  padding: 10px 15px 20px 15px;
+  background-color: white; }
 
 .blogStats {
   display: flex;
@@ -625,18 +651,32 @@ footer a:hover {
     width: 65%;
     font-size: 2.0rem; }
 
-.portfolioContent {
+.landing {
+  margin-top: 150px; }
+
+.introContent {
   display: flex;
-  justify-content: space-between; }
-  .portfolioContent h2 {
-    width: 10%;
-    z-index: 99; }
-  .portfolioContent .description {
+  justify-content: space-between;
+  position: relative;
+  margin-left: 15%; }
+  .introContent h2 {
+    width: 18%;
+    z-index: 99;
+    position: absolute;
+    top: 0;
+    left: -15%;
+    font-weight: 100; }
+    .introContent h2 span {
+      font-weight: 600;
+      color: inherit; }
+      .introContent h2 span span {
+        margin-left: 70%; }
+  .introContent .description {
     width: 65%;
     border: 10px solid #ff9884;
     padding: 75px 120px;
     position: relative; }
-  .portfolioContent .description:after {
+  .introContent .description:after {
     position: absolute;
     content: '';
     top: 10px;
@@ -645,19 +685,19 @@ footer a:hover {
     height: 100%;
     border: 10px solid rgba(211, 211, 211, 0.25);
     z-index: -9; }
-  .portfolioContent .blogNav {
+  .introContent .blogNav {
     width: 25%;
     position: relative; }
-    .portfolioContent .blogNav ul {
+    .introContent .blogNav ul {
       list-style: none;
       margin: 0;
       padding: 0;
       position: absolute;
       right: 0;
       bottom: -25%; }
-      .portfolioContent .blogNav ul li {
+      .introContent .blogNav ul li {
         padding: 10px 0; }
-        .portfolioContent .blogNav ul li a {
+        .introContent .blogNav ul li a {
           font-size: 1.3rem;
           margin: 0;
           padding: 0;
@@ -665,27 +705,41 @@ footer a:hover {
           text-decoration: none;
           color: grey;
           pointer-events: none; }
-      .portfolioContent .blogNav ul li a:before {
+      .introContent .blogNav ul li a:before {
         content: '\f0da';
         font-family: FontAwesome;
         position: absolute;
-        top: 0;
+        top: 3px;
         left: -20px;
         color: #ff9884;
         font-size: inherit;
         display: none; }
-      .portfolioContent .blogNav ul li:hover a {
+      .introContent .blogNav ul li:hover a {
         color: #ff9884; }
-      .portfolioContent .blogNav ul li:hover a:before {
+      .introContent .blogNav ul li:hover a:before {
         display: inline; }
+
+.portfolioContent h2 span {
+  margin-left: 10%; }
 
 .dashboardWrap {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap; }
 
+.dashboardMain {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
+.dashboardSecond {
+  width: 100%;
+  display: flex;
+  flex-direction: row; }
+
 .imageWrap {
   width: calc(33% - 20px);
   background: cadetblue;
   height: 400px;
-  margin: 10px; }
+  margin: 5px; }
