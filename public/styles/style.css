@@ -727,19 +727,81 @@ footer a:hover {
   flex-direction: row;
   flex-wrap: wrap; }
 
-.dashboardMain {
+.dashboardTop {
   width: 100%;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap; }
+  height: 70vh; }
 
-.dashboardSecond {
-  width: 100%;
+.dashboardMain {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 100%; }
+
+.dashboardSide, .dashboardBottom {
   display: flex;
   flex-direction: row; }
 
+.dashboardSide {
+  width: 60%;
+  flex-wrap: wrap; }
+
+.dashboardBottom {
+  width: 100%;
+  justify-content: space-between;
+  height: 30vh; }
+
 .imageWrap {
-  width: calc(33% - 20px);
-  background: cadetblue;
-  height: 400px;
-  margin: 5px; }
+  width: calc(33% - 10px);
+  margin: 5px;
+  padding: 10px; }
+
+.imageWrap1 {
+  width: 100%;
+  background: url("../../assets/blog_03.jpeg");
+  background-position: center center;
+  background-size: cover; }
+
+.imageWrap2 {
+  width: calc(55% - 10px);
+  height: calc(60% - 10px);
+  background: url("../../assets/blog_02.jpeg");
+  background-position: center center;
+  background-size: cover; }
+
+.imageWrap3 {
+  width: calc(45% - 10px);
+  height: calc(60% - 10px);
+  background: url("../../assets/portfolio_01.jpeg");
+  background-position: center center;
+  background-size: cover; }
+
+.imageWrap4 {
+  width: calc(100% - 10px);
+  height: calc(40% - 10px);
+  background: url("../../assets/leaves.jpeg");
+  background-position: center center;
+  background-size: cover; }
+
+.imageWrap5 {
+  background: url("../../assets/cat-furniture.jpeg");
+  background-position: center center;
+  background-size: cover; }
+
+.imageWrap6 {
+  background: #ff9884; }
+
+.imageWrap7 {
+  background: url("../../assets/blog_05.jpeg");
+  background-position: center center;
+  background-size: cover; }
+
+.imageDescription {
+  text-align: center;
+  color: white;
+  background: #ff9884;
+  height: 100%; }
+  .imageDescription h5 {
+    margin: 0; }
