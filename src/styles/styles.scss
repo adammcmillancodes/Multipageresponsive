@@ -29,7 +29,7 @@
     }
     .description {
     	width: 65%;
-    	border: 10px solid rgb(255, 152, 132);
+    	border: 10px solid rgb(255, 178, 163);
     	padding: 75px 120px;
     	position: relative;
     }
@@ -72,13 +72,13 @@
 		    	position: absolute;
 		    	top: 3px;
 		    	left: -20px;
-		    	color: rgb(255, 152, 132);
+		    	color: rgb(255, 178, 163);
 		    	font-size: inherit;
 		    	display: none;
 		    }
 		    li:hover {
 		    	a{
-		    		color: rgb(255, 152, 132);
+		    		color: rgb(255, 178, 163);
 		    	}
 		    	a:before{
 		    		display: inline;
@@ -166,7 +166,7 @@
 
 }
 .imageWrap6 {
-	background: #ff9884;
+	background: rgb(255, 178, 163);
 
 }
 .imageWrap7 {
@@ -175,14 +175,53 @@
     background-size: cover;
 
 }
-
+.imageWrap:hover {
+	.imageDescription {
+		display: flex;
+	}
+}
 .imageDescription {
 	text-align: center;
-	color: white;
-	background: #ff9884;
-	height: 100%;
+    color: white;
+    background: #ffb2a3;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10px;
 	h5 {
 		margin: 0;
+		font-size: 2.0rem;
+		position: relative;
+	}
+	h5:after{
+		position: absolute;
+		content: '';
+		width: 30%;
+		height: 2px;
+		background: white;
+		bottom: -10px;
+		left: 35%;
+	}
+	p {
+		font-size: 1.6rem;
 	}
 }
 
+.blockquote {
+	color: white;
+	font-family: 'Lora', serif;
+	font-weight: 100;
+	text-align: center;
+	vertical-align: middle;
+	p {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		align-content: center;
+	}
+	span {
+		color: white;
+		font-weight: 900;
+	}
+}

@@ -143,7 +143,7 @@ header, section {
   margin-bottom: 150px; }
 
 span, footer h5 {
-  color: #ff9884; }
+  color: #ffb2a3; }
 
 h1 {
   font-size: 6.0rem;
@@ -246,7 +246,7 @@ nav {
   .aboutContent .aboutBio {
     width: 48%;
     color: white;
-    background-color: #ff9884;
+    background-color: #ffb2a3;
     padding: 50px; }
     .aboutContent .aboutBio h3 {
       display: flex;
@@ -288,7 +288,7 @@ nav {
       color: rgba(0, 128, 0, 0.5); }
 
 .profile {
-  background-color: #ff9884;
+  background-color: #ffb2a3;
   color: white;
   width: 100%;
   display: flex;
@@ -339,7 +339,7 @@ nav {
   margin-left: 50px; }
 
 #features {
-  background: #ff9884; }
+  background: #ffb2a3; }
 
 .features {
   display: flex;
@@ -435,7 +435,7 @@ nav {
   box-shadow: 2px 6px 20px rgba(0, 0, 0, 0.13);
   margin: 12px; }
   .plan h4 {
-    background: #ff9884;
+    background: #ffb2a3;
     padding: 25px;
     color: white;
     margin: 0; }
@@ -579,7 +579,7 @@ nav {
   margin: 10px 0; }
 
 .blogContent h4:hover {
-  color: #ff9884;
+  color: #ffb2a3;
   text-decoration: underline; }
 
 .blogContent p {
@@ -673,7 +673,7 @@ footer a:hover {
         margin-left: 70%; }
   .introContent .description {
     width: 65%;
-    border: 10px solid #ff9884;
+    border: 10px solid #ffb2a3;
     padding: 75px 120px;
     position: relative; }
   .introContent .description:after {
@@ -711,11 +711,11 @@ footer a:hover {
         position: absolute;
         top: 3px;
         left: -20px;
-        color: #ff9884;
+        color: #ffb2a3;
         font-size: inherit;
         display: none; }
       .introContent .blogNav ul li:hover a {
-        color: #ff9884; }
+        color: #ffb2a3; }
       .introContent .blogNav ul li:hover a:before {
         display: inline; }
 
@@ -791,17 +791,51 @@ footer a:hover {
   background-size: cover; }
 
 .imageWrap6 {
-  background: #ff9884; }
+  background: #ffb2a3; }
 
 .imageWrap7 {
   background: url("../../assets/blog_05.jpeg");
   background-position: center center;
   background-size: cover; }
 
+.imageWrap:hover .imageDescription {
+  display: flex; }
+
 .imageDescription {
   text-align: center;
   color: white;
-  background: #ff9884;
-  height: 100%; }
+  background: #ffb2a3;
+  height: 100%;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 10px; }
   .imageDescription h5 {
-    margin: 0; }
+    margin: 0;
+    font-size: 2.0rem;
+    position: relative; }
+  .imageDescription h5:after {
+    position: absolute;
+    content: '';
+    width: 30%;
+    height: 2px;
+    background: white;
+    bottom: -10px;
+    left: 35%; }
+  .imageDescription p {
+    font-size: 1.6rem; }
+
+.blockquote {
+  color: white;
+  font-family: 'Lora', serif;
+  font-weight: 100;
+  text-align: center;
+  vertical-align: middle; }
+  .blockquote p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center; }
+  .blockquote span {
+    color: white;
+    font-weight: 900; }
